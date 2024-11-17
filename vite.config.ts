@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"), // Alias for src directory
     },
   },
+  base: "/LinkPeek/", // Important for GitHub Pages deployment
 });
